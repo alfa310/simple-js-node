@@ -4,7 +4,7 @@ A simple Javascript Node application to be used as a template for any Javascript
 The architecture is divided in three main layers:
 - **Routers**: in charge of recieving requests, validate them and select the appropiate service(s) needed to fulfill the request.
 - **Services**: each one with a unique purpose, in charge of applying all business related logic as well as selecting the ports that fulfill its purpose.
-- **Ports**: simple connectors to either a database or an external API, must include at most data related logic.  
+- **Ports**: simple connectors to either a database or an external APIs, must include at most data related logic.  
 
 ![Architecture](./readme/architecture.png)
 

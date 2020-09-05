@@ -1,0 +1,45 @@
+{
+  "main": "index.js",
+  "engines": {
+    "node": "12.14.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-winston": "^4.0.5",
+    "joi": "^17.2.1",
+    "loglevel": "^1.6.8",
+    "mongoose": "^5.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "@types/jest": "^26.0.12",
+    "eslint": "^7.8.0",
+    "faker": "^5.1.0",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "jest --coverage --forceExit --detectOpenHandles",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src",
+    "lint": "eslint --ignore-path .gitignore",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "format": "yarn prettier --write",
+    "check-format": "yarn prettier --list-different \"**/*.+(js|json)\"",
+    "validate": "yarn lint && yarn test && yarn build"
+  },
+  "license": "UNLICENSED",
+  "author": {
+    "email": "berolatti.diego@gmail.com",
+    "name": "Diego Berolatti"
+  }
+}

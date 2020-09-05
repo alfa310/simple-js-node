@@ -1,0 +1,8 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "env": { "es6": true, "node": true, "jest": true },
+  "extends": ["eslint:recommended"]
+}
